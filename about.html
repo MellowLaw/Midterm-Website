@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoepify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container about">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" ></a>
+            </div>
+            <nav>
+                <ul id="MenuItem">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <h2 class="title">ABOUT US</h2>
+        <div class="row">
+            <div class="col-2 desc">
+                <h1>About Shoepify</h1>
+                <p>Shoepify was created by a group of sneaker lovers who wanted to share their passion with others. What started as a small hobby grew into an online store where people can find rare and stylish shoes, sportswear, and streetwear.</p>
+                <p>We know how exciting it is to own a special pair of sneakers, so we focus on bringing you hard-to-find and limited-edition releases. Whether you're looking for classic designs or the latest trends, we’ve got something for every sneaker fan.</p>
+                <h2>The Brands We Love</h2>
+                <p>We sell only trusted and popular brands, including:</p>
+                <ul class="brand-list">
+                    <li><span class="fire">🔥</span> <strong>Nike</strong> – From Air Jordans to Dunks.</li>
+                    <li><span class="fire">🔥</span> <strong>Adidas</strong> – Yeezys, Ultraboosts, and more.</li>
+                    <li><span class="fire">🔥</span> <strong>Puma</strong> – Retro runners and bold collabs.</li>
+                    <li><span class="fire">🔥</span> <strong>Converse</strong> – Timeless Chuck Taylors and modern twists.</li>
+                </ul>
+                
+                <h2>Our Promise</h2>
+                <ul class="promise-list">
+                    <li><span class="check">✔</span> <strong>100% Authentic</strong> – Guaranteed legit or your money back.</li>
+                    <li><span class="check">✔</span> <strong>Deadstock Condition</strong> – Brand new, unless stated otherwise.</li>
+                    <li><span class="check">✔</span> <strong>Worldwide Reach</strong> – Shipping across the globe to fellow sneakerheads.</li>
+                </ul>
+                
+                <p class="disclaimer">Heads up: Vintage sneakers may show age—rock 'em at your own risk!</p>
+                
+                <a href="product.html" class="btn">Explore Collection</a>
+            </div>
+            <div class="col-2">
+                <img src="images/about-img.png" alt="Shoepify Sneaker Collection">
+            </div>
+    </div> 
+    
+</div>
+   
+
+    <!---------- Footer -------------->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <img src="images/logo.png" alt="" class="footer-logo">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>©2025 Shoepify | All Rights Reserved</p>
+    </footer>
+    <script>
+    var MenuItems = document.getElementById("MenuItem");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px"){
+          MenuItems.style.maxHeight = "200px"; // Adjust this value based on your content height
+      }
+      else{
+          MenuItems.style.maxHeight = "0px";
+      }
+    }
+
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function(){
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function(){
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function(){
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function(){
+        productImg.src = smallImg[3].src;
+    }
+  </script>
+</body>
+</html>
